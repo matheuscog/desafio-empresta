@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "2eb8b564-b3e1-4020-b191-44052e77545f",
+		"name": "Empresta - Desafio técnico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14375636"
+	},
+	"item": [
+		{
+			"name": "Instituições",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/instituicoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"instituicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convênios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/convenios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"convenios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simular crédito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor_emprestimo\": 11750.0,\r\n    \"instituicoes\": [\"BMG\", \"PAN\"],\r\n    \"convenios\": [],\r\n    \"parcela\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/simular_credito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"simular_credito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
